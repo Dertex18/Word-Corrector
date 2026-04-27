@@ -7,7 +7,7 @@ public class Corrector {
         int count = 1;
         for (String str : strs) {
             if ( str != null && str.contains("b")) {
-                str = str.replace("b", "o");
+                str = str.replace("b", "o").replace("B", "O");
             }
 
             stringBuilder.append(count)
