@@ -10,8 +10,7 @@ public class Corrector {
                 str = str.replace("b", "o").replace("B", "O");
             }
 
-            stringBuilder.append(count)
-                    .append(count++)
+            stringBuilder.append(count++)
                     .append(") ")
                     .append(str)
                     .append("\n");
