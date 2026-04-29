@@ -3,7 +3,7 @@ package app;
 public class Main {
 
     public static void main(String[] args) {
-        getOutput(Corrector().handleData(
+        getOutput(new Corrector().handleData(
                 new DataProvider())
         );
     }
