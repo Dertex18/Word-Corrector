@@ -3,9 +3,13 @@ package app;
 public class Main {
 
     public static void main(String[] args) {
-        getOutput(new Corrector().handleData(
-                new DataProvider())
-        );
+        DataProvider dataProvider = new DataProvider();
+        String[] data = dataProvider.getData();
+
+        Corrector corrector = new Corrector();
+        String result = corrector.handleData(data);
+
+        getOutput(result);
     }
 
     private static void getOutput(String output) {
